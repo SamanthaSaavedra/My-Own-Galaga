@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+}
+
+/* PROPIEDADES DE DISEÑO PARA EL MAPA */
+.mapa{
+    width: 1024px;
+    height: 900px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    display: block;
+    background: url(../imagenes/fondo.gif);
+    position: relative;
+}
+
+.vidas{
+   width: 90px;
+   height: 30px;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: 1;
+   display: flex;
+   background: url(../imagenes/vida.png);
+   background-size: 30px 100%;
+}
+.vidas img{
+    height: 100%
+}
+
+.jugador{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 40px;
+    height: 70px;
+    background: url(../imagenes/nave.png);
+    background-size: 100% 100%;
+    
+}
+
+.bala{
+    width: 10px;
+    height: 25px;
+    border-radius: 100%;
+    background: -webkit-linear-gradient(top, rgb(146, 130, 240), rgb(53, 24, 212));
+    box-shadow: 0px 0px 6px 3px rgb(102, 82, 214);
+    position: absolute;
+    z-index: 1;
+}
+
+.balaEnemigo{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: -webkit-linear-gradient(top, rgb(238, 133, 150), rgb(224, 53, 81));
+    box-shadow: 0px 0px 6px 3px rgb(173, 33, 99);
+    background-color: rgb(202, 38, 161);
+    position: absolute;
+    z-index: 1;
+}
+
+.enemigo{
+    position: absolute;
+    top: 0px;
+    width: 60px;
+    height: 60px;
+    background: url(../imagenes/navem.png);
+    background-size: 100% 100%;
+}
+
+.puntos{
+    position:absolute;
+    top: 0px;
+    right: 5px;
+    color:white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.jefe{
+    position: absolute;
+    top: 0px;
+    width: 110px;
+    height: 110px;
+    background: url(../imagenes/jefe.png);
+    background-size: 100% 100%;
+}
